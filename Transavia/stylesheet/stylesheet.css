@@ -1,0 +1,661 @@
+/*csslint order-alphabetical:false,outline-none:false, universal-selector:false, box-model:false, qualified-headings: false, unique-headings:false, box-sizing:false, fallback-colors:false compatible-vendor-prefixes:false*/
+
+/*
+========================================================
+    BROWSER RESET - gebaseerd op html5 doctor css reset
+     http://html5doctor.com/html-5-reset-stylesheet
+========================================================
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}
+nav ul{list-style:none}
+ul{margin-left:1.1em;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+*,*:before,*:after{box-sizing: border-box;}
+/*     EINDE BROWSER RESET */
+
+/*
+========================================================
+                        General
+========================================================
+*/
+
+body {
+    background-color: #fff;
+    font-family:"nexa light", "verdana", "arial";
+}
+
+h1, h2, h3, h4 {
+    font-family:"nexa bold", "verdana", "arial";
+    color: #00d66c;
+    line-height: 1.625rem;
+}
+
+h1, h2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    color: #606060;
+    line-height: 1.5rem;
+}
+
+/*
+========================================================
+                        Header
+========================================================
+*/
+
+header {
+    background: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0em 0.2em 1.8em #ccc;
+    position: fixed;
+}
+
+header > h1 {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+header > h1 img {
+    width: 1em;
+    margin-right: 0.5em;;
+}
+
+
+/*
+========================================================
+                        Nav
+========================================================
+*/
+
+header nav {
+    background-color: #00d66c;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+header nav img {
+    width: 30%;
+    margin-right: 0.2em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    margin: 0.5em;
+}
+
+/*
+========================================================
+                        input search
+========================================================
+*/
+
+input[type=search] {
+    width: 0;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/menu/search.svg');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 2em;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+}
+
+input[type=search]:focus {
+    width: 100%;
+    border: 2px solid #ccc;
+}
+
+/*
+========================================================
+                        Div
+========================================================
+*/
+/*
+.Tijd {
+        background-image: url(../images/book-background-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+*/
+.Tijd > article {
+            background: rgba(255, 255, 255, 0.7);
+            margin: -40px;
+            padding: 2.5em;
+}
+
+.Tijd > h1 {
+    font-size: 1.2rem;
+}
+
+.Tijd > h2 {
+    font-size: 1.2rem;
+
+}
+
+.Tijd  {
+    color: #00d66c;
+    text-align: center;
+    padding: 1em;
+    margin-top: 9.5em;
+}
+
+.Verhaal-Zoeken > h1 {
+    font-size: 1.2rem;
+    color: #ff3268;
+    text-align: center;
+    padding: 1em
+}
+
+/*
+========================================================
+                        Section
+========================================================
+*/
+
+section {
+    padding: 0.2em;
+    align-self: center;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+/*
+
+
+/*
+========================================================
+                        Main
+========================================================
+*/
+
+main {
+    padding: 0.1em;
+    background: #f3e5d8;
+    display: flex;
+    flex-direction: column;
+}
+
+main > h3 {
+    padding: 1em 0em;
+    color: #2800a0;
+    text-align: center;
+}
+
+main > section > article {
+    background: rgba(255,255,255,.7);
+    align-content: center;
+    margin: 0 auto;
+    padding: 0.8em;
+    border-radius: .75rem;
+    width: 90%;
+}
+
+main > section > article:nth-child(2) {
+    display: none;
+}
+
+main > section > article:nth-child(3) {
+    display: none;
+}
+
+main > section > article a {
+    text-decoration: none;
+    color: #00d66c;
+}
+
+main > section > article h3 {
+    padding: 0;
+    line-height: 2.5rem;
+}
+
+main > section > article > h5 {
+    display: inline-block;
+    float: right;
+    font-size: 1em;
+}
+
+main > section > article > h5 img {
+    width: 1.5em;
+}
+
+/*
+========================================================
+                        Article
+========================================================
+*/
+
+article > h3 {
+    margin-bottom: 0.5em;
+}
+
+article > img {
+    margin-bottom: 0.5em;
+}
+
+article > h4 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+article > p {
+    margin-bottom: 0.8em;
+}
+
+article :nth-child(3) {
+    font-size: 0.95em;
+    color: #ff3268;
+}
+
+article > p > button {
+    margin-left: 1em;
+}
+
+article > button {
+    display: inline-block;
+    float: left;
+}
+
+/*
+========================================================
+                        Image
+========================================================
+*/
+
+img {
+    border-radius: .75rem;
+    width: 100%;
+}
+
+/*
+========================================================
+                        Button
+========================================================
+*/
+
+button {
+    background-color: #2800a0;
+    box-shadow: inset 0 -.1875em .0625em #120145;
+    color: #fff;
+    padding: .4375em 1.5em .5625em;
+    border: 0;
+    font-weight: bold;
+    line-height: 1.5;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 1.25em;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+button:first-child {
+    background-color: #ff3268;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    color: #fff;
+    padding: .4375em 1.5em .5625em;
+    border: 0;
+    font-weight: bold;
+    line-height: 1.5;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 1.25em;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+
+/*
+========================================================
+                        Form
+========================================================
+*/
+
+form {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+form select {
+    width: 13em;
+    height: 3em;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #ff3268;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    cursor: pointer;
+    border-radius: 1.25em;
+    margin: 0em 1em 1em 0;
+    padding: 0.8em;
+}
+
+/*
+========================================================
+                        Button filter
+========================================================
+*/
+
+/* http://weggeefcode.nl/ button filter */
+
+.btn {
+    transition: .2s;
+    cursor: pointer;
+    width: 13em;
+    height: 3em;
+    margin: 0 auto;
+    
+    background-color: #ff3268;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    color: #fff;
+    padding: .4375em 1.5em .5625em;
+    font-weight: bold;
+    line-height: 1.5;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 1.25em;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+#content {
+    background-color: #ff3268;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    color: #fff;
+    padding: .4375em 1.5em .5625em;
+    font-weight: bold;
+    line-height: 1.5;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25em;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    width: 13em;
+    margin: 0 auto;
+}
+
+#content input {
+    margin-right: 1em;
+}
+
+
+/*
+De .hidden class verbergt de #content met display:none;
+de class wordt toegevoegd met javascript,
+zodat gebruikers die geen javascript hebben
+de content gewoon kunnen zien.
+*/
+
+.hidden {
+    display: none!important;
+}
+
+
+/*
+========================================================
+                        Form Flex
+========================================================
+*/
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/*
+========================================================
+                     Aanmeldpagina
+========================================================
+*/
+.achtergrond {
+    margin-top: 8em;
+    background: url(../images/vakantie.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 55em;
+}
+
+.aanmelden {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7em;
+    background: rgba(255,255,255,.9);
+    border-radius: 1.25em;
+    padding: 1rem 1rem;
+    width: 90%;
+}
+
+.aanmelden form {
+    margin: 0;
+    width: 100%;
+}
+
+.aanmelden fieldset > legend {
+    color: #00d66c;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.aanmelden fieldset > label {
+    color: #202020;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 800;
+    margin-bottom: 1em;
+}
+
+.aanmelden fieldset > input {
+    margin: 0;
+    height: 2em;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.aanmelden p {
+    margin-top: 2em;
+}
+.aanmelden button {
+    margin: 1em 0 1em 0;
+}
+
+.aanmelden button:nth-child(2) {
+    background-color: #ff3268;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+}
+
+/*
+=======================================================================================
+                            @Media 17em Mobile ---------------------------------------------------1
+=======================================================================================
+*/
+
+/*
+========================================================
+            @Media min-width 30em Mobile ---------------------------------------------------2
+========================================================
+*/
+
+@media (min-width: 25em) {
+
+    h1, h2 {
+        font-size: 2.375rem;
+        line-height: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1.0rem;
+        color: #606060;
+        line-height: 1.625rem;
+    }
+
+    header > h1 {
+        margin: 1rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    header > h1 img {
+        width: 1.5em;
+        margin-right: 1em;;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+    }
+
+    header nav img {
+        width: 20%;
+        margin-right: 0.5em;
+    }
+
+    header nav li {
+        margin: 1em;
+    }
+
+    .Tijd > h1 {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+    .Tijd > h2 {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+    .Tijd  {
+        padding: 2em;
+        margin-top: 14em;
+        }
+
+     .Verhaal-Zoeken > h1 {
+        font-size: 1.3rem;
+        line-height: 3.2rem;
+        padding: 0.5em
+    }
+
+    .Verhaal-Zoeken > h1 > button {
+        margin-left: 2em;
+        }
+
+    section {
+        width: 90%;
+    }
+
+    main > h3 {
+        padding: 1em 0em;
+    }
+
+    .aanmelden {
+    width: 50%;
+}
+    .aanmelden fieldset > legend {
+    font-size: 2rem;
+}
+
+}/*Eind media*/
+
+/*
+========================================================
+            @Media min-width 50em Mobile ---------------------------------------------------3
+========================================================
+*/
+
+@media (min-width: 50em) {
+
+    main > section {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main > section > article {
+            width: 45%;
+        }
+
+    main > section > article:nth-child(2) {
+        display: inline-block;
+    }
+    main > section > article:nth-child(3) {
+        display: none;
+    }
+
+    .aanmelden {
+    width: 30%;
+}
+
+}/*Eind media*/
+
+/*
+================================================
+            @Media min width 70em ---------------------------------------------------4
+================================================
+*/
+
+@media (min-width: 70em) {
+
+    section {
+         width: 80%;
+    }
+
+    main > section > article {
+            width: 30%;
+        }
+
+    main > section > article:nth-child(3) {
+        display: inline-block;
+    }
+
+    .aanmelden {
+    width: 20%;
+}
+
+}/*Eind media*/
