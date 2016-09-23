@@ -145,32 +145,34 @@ input[type=search]:focus {
                         Div
 ========================================================
 */
-/*
+
 .Tijd {
-        background-image: url(../images/book-background-1.jpg);
+        background-image: url(../images/reading-book.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
 }
-*/
+
 .Tijd > article {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.2);
             margin: -40px;
             padding: 2.5em;
 }
 
-.Tijd > h1 {
-    font-size: 1.2rem;
+.Tijd h1 {
+    font-size: 1rem;
+    color: #000;
+    text-shadow: 0em 0em 0.5em #fff;
 }
 
-.Tijd > h2 {
-    font-size: 1.2rem;
-
+.Tijd h2 {
+    font-size: 1rem;
+    color: #000;
+    text-shadow: 0em 0em 0.5em #fff;
 }
 
-.Tijd  {
-    color: #00d66c;
-    text-align: center;
+.Tijd {
+    text-align: right;
     padding: 1em;
     margin-top: 9.5em;
 }
@@ -288,7 +290,7 @@ article > p > button {
 
 article > button {
     display: inline-block;
-    float: left;
+    align-content: left;
 }
 
 /*
@@ -348,10 +350,11 @@ button:first-child {
 form {
     max-width: 70%;
     margin: 0 auto;
+    align-content: center;
 }
 
 form select {
-    width: 13em;
+    width: 12em;
     height: 3em;
     color: #fff;
     font-size: 1rem;
@@ -359,7 +362,6 @@ form select {
     box-shadow: inset 0 -.1875em .0625em #ca2b55;
     cursor: pointer;
     border-radius: 1.25em;
-    margin: 0em 1em 1em 0;
     padding: 0.8em;
 }
 
@@ -389,6 +391,7 @@ form select {
     border-radius: 1.25em;
     min-height: 1.5rem;
     min-width: 1.5rem;
+    align-content: center;
 }
 
 #content {
@@ -405,7 +408,6 @@ form select {
     min-height: 1.5rem;
     min-width: 1.5rem;
     width: 13em;
-    margin: 0 auto;
 }
 
 #content input {
@@ -431,7 +433,7 @@ de content gewoon kunnen zien.
 ========================================================
 */
 
-form {
+aside {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -505,9 +507,9 @@ form {
 }
 
 /*
-=======================================================================================
-                            @Media 17em Mobile ---------------------------------------------------1
-=======================================================================================
+==================================================
+                            @Media 17em Mobile ----------------------------------------------1
+==================================================
 */
 
 /*
@@ -561,20 +563,23 @@ form {
         margin: 1em;
     }
 
-    .Tijd > h1 {
-        font-size: 2rem;
-        line-height: 3.2rem;
+    .Tijd h1 {
+        font-size: 1.5rem;
     }
 
-    .Tijd > h2 {
-        font-size: 2rem;
-        line-height: 3.2rem;
+    .Tijd h2 {
+        font-size: 1.5rem;
+        color: #00d66c;
     }
 
     .Tijd  {
-        padding: 2em;
+        padding: 5em;
         margin-top: 14em;
         }
+    
+    .Tijd > article {
+            margin: -80px;
+    }
 
      .Verhaal-Zoeken > h1 {
         font-size: 1.3rem;
@@ -631,6 +636,9 @@ form {
     .aanmelden {
     width: 30%;
 }
+    .Tijd  {
+        text-align: center;
+        }
 
 }/*Eind media*/
 
@@ -657,5 +665,14 @@ form {
     .aanmelden {
     width: 20%;
 }
+    .Tijd h1 {
+        font-size: 2rem;
+        color: #00d66c;
+    }
+
+    .Tijd h2 {
+        font-size: 2rem;
+    }
+    
 
 }/*Eind media*/
